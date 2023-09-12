@@ -504,7 +504,7 @@ p {
   padding: 0;
   width: -moz-max-content;
   width: max-content;
-  min-width: 100%;
+  min-width: 200px;
   padding: 20px 10px;
   border-radius: 5px;
   z-index: -1;
@@ -519,6 +519,8 @@ p {
 }
 .custom-navbar .submenuparent .submenu li a {
   color: #000;
+  display: block;
+  width: 100%;
 }
 .custom-navbar .submenuparent .submenu li a:hover {
   background-color: #0039b5;
@@ -1165,6 +1167,112 @@ p {
   opacity: 1;
 }
 
+.web-section-page .about-section {
+  padding-top: 100px;
+}
+.web-section-page .about-section .ab-content h5 {
+  color: #0039b5;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.web-section-page .about-section .ab-content p {
+  font-size: 1rem;
+}
+.web-section-page .about-section .ab-content li {
+  position: relative;
+  padding-right: 15px;
+  margin-bottom: 10px;
+}
+.web-section-page .about-section .ab-content li::after {
+  position: absolute;
+  content: "";
+  border: 2px solid #0039b5;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: block;
+  top: 7px;
+  right: 0;
+}
+.web-section-page .about-section .ab-content a.btn-style {
+  border-radius: 30px;
+  padding: 13px 12px;
+  min-width: 200px;
+  font-size: 0.9rem;
+}
+.web-section-page .our-services {
+  background-image: url("../images/servicesbg.png");
+  padding: 40px 0;
+  padding-bottom: 50px;
+}
+.web-section-page .our-services .section-header {
+  text-align: center;
+  margin-bottom: 150px;
+}
+.web-section-page .our-services .section-header h5, .web-section-page .our-services .section-header p {
+  color: #fff;
+}
+.web-section-page .our-services .section-header h5 {
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+.web-section-page .our-services .section-header p {
+  font-size: 1.2rem;
+}
+.web-section-page .what-we-offer {
+  padding: 54px 0;
+}
+.web-section-page .what-we-offer .section-header {
+  text-align: center;
+}
+.web-section-page .what-we-offer .section-header h5 {
+  font-size: 2.5rem;
+  color: #2857EC;
+}
+
+.serv-card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 90px;
+}
+.serv-card .serv-rectangle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+.serv-card .serv-number {
+  position: absolute;
+  top: -60px;
+  left: 25px;
+}
+.serv-card .serv-star {
+  position: absolute;
+  bottom: -60px;
+  left: 45px;
+}
+.serv-card .card-icon {
+  position: relative;
+  z-index: 3;
+}
+.serv-card .card-icon img {
+  height: 50px;
+}
+.serv-card .card-title {
+  margin-top: 15px;
+  position: relative;
+  z-index: 3;
+}
+.serv-card .card-title h5 {
+  color: #000;
+  font-size: 1rem;
+}
+
 footer {
   background-color: #02284a;
   padding: 22px 0;
@@ -1292,7 +1400,7 @@ footer .footer-pay img.comp {
 }
 /* ================================================================ */
 /* Shared styles  */
-.header, .who-release-wrapper, .work-owner, .why-chhose-us, .faq {
+.header, .who-release-wrapper, .work-owner, .why-chhose-us, .faq, .web-section-page .our-services {
   background-position: center;
   background-size: cover;
 }
