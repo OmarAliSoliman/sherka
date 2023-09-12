@@ -403,8 +403,12 @@ p {
   margin-top: 20px;
 }
 
+.inner-header {
+  min-height: auto;
+}
+
 .social-media-right {
-  position: absolute;
+  position: fixed;
   top: 100px;
   height: auto;
   min-height: 600px;
@@ -508,12 +512,19 @@ p {
   visibility: hidden;
   transition: all 0.3s ease-in-out;
   transform: translateY(-10px);
+  box-shadow: 7px 7px 10px rgba(135, 135, 135, 0.3) !important;
 }
 .custom-navbar .submenuparent .submenu li {
   margin-bottom: 10px;
 }
 .custom-navbar .submenuparent .submenu li a {
   color: #000;
+}
+.custom-navbar .submenuparent .submenu li a:hover {
+  background-color: #0039b5;
+  color: #fff;
+  border-radius: 5px;
+  padding: 5px;
 }
 .custom-navbar .submenuparent .submenu li:last-child {
   margin-bottom: 0;
@@ -523,6 +534,55 @@ p {
   opacity: 1;
   visibility: visible;
   z-index: 4;
+}
+
+.top-submenu {
+  background-image: linear-gradient(to bottom, #0039b5, #001d5b);
+  padding: 160px 0 50px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 3;
+  overflow: hidden;
+  transform: translateY(10px);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+.top-submenu .sub-after {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.top-submenu ul {
+  position: relative;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.top-submenu ul li {
+  width: 25%;
+  margin-bottom: 15px;
+}
+.top-submenu ul li a {
+  color: #BEDEFF;
+  font-size: 1rem;
+}
+.top-submenu ul li a:hover {
+  color: #ff8f00;
+}
+.top-submenu ul li.active a {
+  color: #ff8f00;
+}
+
+.activebigmenu {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.inner-custom-navbar nav {
+  box-shadow: 7px 7px 5px rgba(135, 135, 135, 0.3) !important;
 }
 
 /* ================================================================ */
@@ -1046,6 +1106,65 @@ p {
   color: #000;
 }
 
+.portfolio-card .card-img {
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease-in-out;
+}
+.portfolio-card .card-img::after {
+  content: "";
+  background-color: #0039B5;
+  opacity: 0.5;
+}
+.portfolio-card .card-title {
+  color: #fff;
+  position: relative;
+  z-index: 2;
+}
+.portfolio-card .card-title h5 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+.portfolio-card .options {
+  position: relative;
+  z-index: 4;
+  margin-top: 30px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease-in-out;
+}
+.portfolio-card .options a {
+  width: 55px;
+  height: 55px;
+  background-color: #FEE9B9;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 20px;
+}
+.portfolio-card .options a img {
+  width: 30px;
+}
+.portfolio-card .options a:hover {
+  background-color: #fff;
+}
+.portfolio-card:hover .card-img::after {
+  background-color: #FF8F00;
+}
+.portfolio-card:hover .card-title h5 {
+  color: #0039b5;
+}
+.portfolio-card:hover .options {
+  transform: translate(0);
+  visibility: visible;
+  opacity: 1;
+}
+
 footer {
   background-color: #02284a;
   padding: 22px 0;
@@ -1183,7 +1302,7 @@ footer .footer-pay img.comp {
   font-weight: 900;
 }
 
-.header::after, .who-release-wrapper::after, .work-card .shadow-title, .why-chhose-us:after, .faq::after {
+.header::after, .who-release-wrapper::after, .work-card .shadow-title, .why-chhose-us:after, .faq::after, .portfolio-card .card-img::after {
   position: absolute;
   top: 0;
   left: 0;
