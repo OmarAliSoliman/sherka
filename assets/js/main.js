@@ -2,25 +2,61 @@ $(document).ready(function () {
   var currentDir = $("a").css("direction");
   console.log(currentDir);
 
-  if($(".social-media-right").length){
+  if ($(".social-media-right").length) {
     let clicked = true;
     $(".social-media-right .arrow-click").on("click", function () {
       if (!clicked) {
-        $(this).parent().find("ul").animate({left: "-100%"}, 20);
+        $(this).parent().find("ul").animate({ left: "-100%" }, 20);
         clicked = true;
       } else {
-        $(this).parent().find("ul").animate({left: "0%"}, 20);
+        $(this).parent().find("ul").animate({ left: "0%" }, 20);
         clicked = false;
       }
     });
   }
 
 
-  if($(".company-slider").length){
+  if ($(".company-slider").length) {
     $(".company-slider").slick({
       slidesToShow: 8,
-      rtl: currentDir == "rtl" ? true:false,
+      rtl: currentDir == "rtl" ? true : false,
       arrows: false,
+      dots: true,
+      slidesToScroll: 1,
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 1000,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: false,
+          },
+        },
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 3,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+          },
+        },
+      ],
+    })
+  }
+
+  if ($(".latest-projects-slider").length) {
+    $(".latest-projects-slider").slick({
+      slidesToShow: 4,
+      rtl: currentDir == "rtl" ? true : false,
+      arrows: true,
       dots: true,
       slidesToScroll: 1,
       infinite: true,
@@ -90,20 +126,20 @@ $(document).ready(function () {
 
   $("html").addClass("splash-active");
 
-  if($(".custom-navbar").length){
-    $(".custom-navbar .submenuparent .submenu li a").on('mouseover', function(){
+  if ($(".custom-navbar").length) {
+    $(".custom-navbar .submenuparent .submenu li a").on('mouseover', function () {
       var datamenu = $(this).attr('data-menu');
       $(`#${datamenu}`).addClass('activebigmenu')
     })
-    $(".custom-navbar .submenuparent .submenu li a").on('mouseleave', function(){
+    $(".custom-navbar .submenuparent .submenu li a").on('mouseleave', function () {
       var datamenu = $(this).attr('data-menu');
       $(`#${datamenu}`).removeClass('activebigmenu')
     })
 
-    $(".top-submenu").on('mouseover', function(){
+    $(".top-submenu").on('mouseover', function () {
       $(this).addClass('activebigmenu')
     })
-    $(".top-submenu").on('mouseleave', function(){
+    $(".top-submenu").on('mouseleave', function () {
       $(this).removeClass('activebigmenu')
     })
   }
