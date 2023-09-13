@@ -414,7 +414,7 @@ p {
   top: 100px;
   height: auto;
   min-height: 600px;
-  z-index: 5;
+  z-index: 7;
   left: 0;
   min-width: 110px;
 }
@@ -1461,11 +1461,6 @@ footer .footer-pay img.comp {
     margin-right: 25px;
   }
 }
-@media (max-width: 1220px) {
-  .order2-tablet {
-    order: 2;
-  }
-}
 @media (max-width: 1024px) {
   html {
     font-size: 13px;
@@ -1483,8 +1478,14 @@ footer .footer-pay img.comp {
   }
 }
 @media (max-width: 991px) {
+  .order2-tablet {
+    order: 2;
+  }
   .custom-navbar nav {
     display: none;
+  }
+  .menu_icon {
+    display: flex;
   }
   .social-media-right {
     min-width: 70px;
@@ -1511,9 +1512,6 @@ footer .footer-pay img.comp {
   }
   footer .footer-pay img.comp {
     left: 0;
-  }
-  .menu_icon {
-    display: flex;
   }
   .serv-card {
     margin-bottom: 250px;
