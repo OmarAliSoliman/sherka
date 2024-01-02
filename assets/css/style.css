@@ -571,7 +571,7 @@ p {
   margin-bottom: 15px;
 }
 .top-submenu ul li a {
-  color: #BEDEFF;
+  color: #bedeff;
   font-size: 1rem;
 }
 .top-submenu ul li a:hover {
@@ -1122,7 +1122,7 @@ p {
 }
 .portfolio-card .card-img::after {
   content: "";
-  background-color: #0039B5;
+  background-color: #0039b5;
   opacity: 0.5;
 }
 .portfolio-card .card-title {
@@ -1146,7 +1146,7 @@ p {
 .portfolio-card .options a {
   width: 55px;
   height: 55px;
-  background-color: #FEE9B9;
+  background-color: #fee9b9;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -1160,7 +1160,7 @@ p {
   background-color: #fff;
 }
 .portfolio-card:hover .card-img::after {
-  background-color: #FF8F00;
+  background-color: #ff8f00;
 }
 .portfolio-card:hover .card-title h5 {
   color: #0039b5;
@@ -1175,7 +1175,7 @@ p {
   padding-top: 100px;
 }
 .web-section-page .about-section .ab-content h5 {
-  color: #2857EC;
+  color: #2857ec;
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
@@ -1233,7 +1233,7 @@ p {
 }
 .web-section-page .what-we-offer .section-header h5 {
   font-size: 2.5rem;
-  color: #2857EC;
+  color: #2857ec;
 }
 .web-section-page .nahgna-tasmem {
   background-color: rgba(255, 143, 0, 0.18);
@@ -1255,7 +1255,7 @@ p {
   margin-top: 40px;
 }
 .web-section-page .know-whatwe-advanges h5 {
-  color: #0039B5;
+  color: #0039b5;
   font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 21px;
@@ -1268,7 +1268,7 @@ p {
   display: none !important;
 }
 .web-section-page .color-lilsta li p {
-  color: #2857EC;
+  color: #2857ec;
 }
 .web-section-page .color-lilsta li span {
   width: 23px;
@@ -1408,6 +1408,232 @@ p {
   font-size: 1rem;
 }
 
+.mobile-section-header .header-content {
+  display: block;
+  padding-top: 90px;
+  text-align: right;
+}
+.mobile-section-header .header-content-content {
+  width: 100%;
+}
+.mobile-section-header .header-content-content h5 {
+  color: #fff !important;
+  font-size: 3rem;
+  width: 100%;
+}
+.mobile-section-header .header-content-content p {
+  font-size: 1.2rem;
+  margin: 18px 0 25px 0;
+}
+.mobile-section-header .header-content-content li {
+  position: relative;
+  padding-right: 10px;
+}
+.mobile-section-header .header-content-content li p {
+  font-size: 1.1rem;
+}
+.mobile-section-header .header-content-content li::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ff8f00;
+  border-radius: 50%;
+}
+.mobile-section-header .header-content-content a {
+  padding: 20px 60px;
+  background-color: #2857ec;
+  border-radius: 34px;
+  color: #fff;
+  margin-top: 42px;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.mobile-section-header .header-content-content a:hover {
+  background-color: #fff;
+  color: #2857ec;
+}
+.mobile-section-header .header-content-img {
+  text-align: center;
+}
+.mobile-section-header .header-content-img img {
+  width: 70%;
+}
+
+.why-mobile-section {
+  padding: 45px 0;
+  margin-bottom: 50px;
+  margin-top: 40px;
+}
+.why-mobile-section .section-header h5 {
+  font-size: 2.4rem;
+  color: #0039b5;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+.why-mobile-section .section-header h5 span {
+  color: #ff8f00;
+}
+.why-mobile-section p {
+  line-height: 37px;
+}
+
+.mobile-section-page .about-section .ab-content h5 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 21px;
+  color: #2857ec;
+}
+.mobile-section-page .about-section .ab-content h5 span {
+  color: #0039b5;
+  font-weight: 700;
+  font-size: 1.7rem;
+  margin-right: 8px;
+}
+.mobile-section-page .about-section .ab-content p {
+  line-height: 31px;
+}
+.mobile-section-page .strip-color {
+  background-color: #2857ec;
+  padding: 45px 0;
+  text-align: center;
+  margin-top: 90px;
+}
+.mobile-section-page .strip-color h5 {
+  color: #fff;
+  font-size: 3rem;
+}
+.mobile-section-page .features {
+  padding-top: 100px;
+  background-image: url("../images/featuresbg.png");
+}
+.mobile-section-page .know-our-product {
+  padding: 66px 0;
+}
+.mobile-section-page .know-our-product .section-header {
+  margin-bottom: 20px;
+}
+.mobile-section-page .know-our-product .section-header h5 {
+  color: #2857ec;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+.mobile-section-page .faq {
+  background-image: url("../images/faqinnerbg.png") !important;
+}
+.mobile-section-page .faq::after {
+  background-image: linear-gradient(to right, rgba(0, 57, 181, 0.97), rgba(2, 40, 74, 0.98));
+}
+.mobile-section-page .faq .section-header h5,
+.mobile-section-page .faq .section-header p {
+  color: #fff;
+}
+.mobile-section-page .faq .accordion .accordion-item .accordion-header .accordion-button {
+  color: #fff;
+}
+.mobile-section-page .faq .accordion .accordion-item .accordion-body p {
+  color: #eef7ff;
+}
+
+.feature-card {
+  position: relative;
+  margin-bottom: 160px;
+}
+.feature-card .card-body {
+  margin-right: 12px;
+}
+.feature-card .card-body h5 {
+  font-size: 1.1rem;
+  color: #2857ec;
+}
+.feature-card .card-body p {
+  font-size: 0.9rem;
+}
+.feature-card .line {
+  position: absolute;
+  bottom: -40px;
+  right: 50px;
+}
+.feature-card .card-icon {
+  flex: none;
+  border: 1px solid #2857ec;
+  border-radius: 11px;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.feature-card.opsite-card .line {
+  right: unset;
+  left: 50px;
+}
+
+.prod-card {
+  display: block;
+  margin-bottom: 90px;
+}
+.prod-card .card-img {
+  height: 245px;
+  border-radius: 32px;
+}
+.prod-card .card-img .img-parent {
+  border-radius: 32px;
+}
+.prod-card .card-img img {
+  border-radius: 32px;
+}
+.prod-card .card-title {
+  margin-top: 20px;
+}
+.prod-card .card-title h5 {
+  font-size: 1.2rem;
+  color: #000;
+  text-align: center;
+}
+
+.works {
+  padding: 23px 0 50px 0;
+}
+.works .section-header {
+  text-align: center;
+  padding-top: 23px;
+  margin-bottom: 45px;
+}
+.works .section-header h5 {
+  font-size: 3rem;
+  color: #2857ec;
+}
+.works .btn-more {
+  margin-top: 83px;
+}
+.works .btn-more .btn-style {
+  background-color: #2857ec;
+  border-radius: 32px;
+  border: 1px solid #2857ec;
+  padding: 18px 60px;
+}
+.works .btn-more .btn-style:hover {
+  background-color: #fff;
+  color: #0039b5;
+}
+
+.work-card {
+  display: block;
+  margin-bottom: 40px;
+  margin-top: 0;
+}
+.work-card .card-img {
+  height: 212px;
+  border-radius: 0;
+}
+.work-card .card-img img {
+  border-radius: 0;
+}
+
 footer {
   background-color: #02284a;
   padding: 22px 0;
@@ -1540,7 +1766,7 @@ footer .footer-pay img.comp {
 }
 /* ================================================================ */
 /* Shared styles  */
-.header, .who-release-wrapper, .work-owner, .why-chhose-us, .faq, .web-section-page .our-services, .web-section-page .latest-projects {
+.header, .who-release-wrapper, .work-owner, .why-chhose-us, .faq, .web-section-page .our-services, .web-section-page .latest-projects, .mobile-section-page .features {
   background-position: center;
   background-size: cover;
 }
