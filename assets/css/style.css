@@ -1537,6 +1537,9 @@ p {
 .mobile-section-page .faq .accordion .accordion-item .accordion-body p {
   color: #eef7ff;
 }
+.mobile-section-page .mobilefaq {
+  margin-top: 0;
+}
 
 .feature-card {
   position: relative;
@@ -1570,6 +1573,184 @@ p {
 .feature-card.opsite-card .line {
   right: unset;
   left: 50px;
+}
+
+.our-departments {
+  padding: 31px 0 75px 0;
+  background-color: #f1f1f1;
+}
+.our-departments .department-header h5 {
+  font-size: 1.5rem;
+}
+.our-departments .department-header p {
+  font-weight: 700;
+  color: #2857ec;
+  font-size: 1.8rem;
+}
+.our-departments .nav-wrapper {
+  background-color: #fff;
+  padding: 0;
+  padding: 32px 0;
+  border-radius: 13px;
+  padding-left: 22px;
+}
+.our-departments .nav-wrapper .nav {
+  margin-left: 0 !important;
+}
+.our-departments .nav-wrapper .nav .nav-link {
+  border-radius: 0;
+  padding: 9px;
+  padding-right: 32px;
+  text-align: right;
+  font-size: 1.2rem;
+  color: #000;
+  margin-bottom: 22px;
+}
+.our-departments .nav-wrapper .nav .nav-link img {
+  margin-left: 20px;
+  width: 25px;
+}
+.our-departments .nav-wrapper .nav .nav-link.active {
+  border-radius: 25px 0 0 25px;
+  color: #fff;
+}
+.our-departments .nav-wrapper .nav .nav-link:first-child img {
+  width: 18px;
+}
+.our-departments .nav-wrapper .nav .nav-link:nth-last-child(2) img {
+  width: 18px;
+}
+.our-departments .department-info-card {
+  background-image: linear-gradient(to right, #2857ec, #02284a);
+  padding: 25px 55px 35px 55px;
+  border-radius: 17px;
+}
+.our-departments .department-info-card .head {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 13px;
+}
+.our-departments .department-info-card p {
+  font-size: 1rem;
+  color: #fff;
+}
+.our-departments .department-info-card li p {
+  font-size: 1.1rem;
+  font-weight: 700;
+  position: relative;
+  padding-right: 20px;
+}
+.our-departments .department-info-card li p::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ff8f00;
+  border-radius: 50%;
+}
+.our-departments .department-info-card .card-img .show-app a {
+  background-color: #ff8f00;
+  color: #fff;
+  border-radius: 9px;
+  position: absolute;
+  bottom: -20px;
+  width: 60%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  margin: auto;
+  padding: 16px 60px;
+  text-align: center;
+  color: #fff;
+}
+.our-departments .department-info-card .card-img .show-app a:hover {
+  background-color: #fff;
+  color: #ff8f00;
+}
+.our-departments .department-info-card .big-image {
+  height: 438px;
+  border-radius: 26px;
+}
+.our-departments .department-info-card .big-image img {
+  border-radius: 26px;
+}
+.our-departments .department-info-card .small-images .card-img {
+  height: 211px;
+  margin-bottom: 20px;
+}
+.our-departments .department-info-card .small-images .card-img .show-app a {
+  bottom: -10px;
+  width: 50%;
+  padding: 10px 50px;
+}
+
+.testemonial {
+  padding: 50px 0 65px 0;
+  position: relative;
+  background-image: url("../images/testbg.png");
+}
+.testemonial .teste_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: linear-gradient(to bottom, #001d7a, #007ce8);
+  padding-bottom: 280px;
+}
+.testemonial .head {
+  text-align: center;
+  position: relative;
+  z-index: 4;
+  margin-bottom: 80px;
+}
+.testemonial .head h5 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.single_teste_card {
+  position: relative;
+  z-index: 3;
+  background-color: #ffffff;
+  border-radius: 12px;
+  border: 0.5px solid rgba(112, 112, 112, 0.57);
+  margin: 0 10px;
+}
+.single_teste_card .card-img {
+  width: 63px;
+  height: 63px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.single_teste_card .teste_card_header {
+  background-color: rgba(40, 87, 236, 0.15);
+  padding: 14px;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+}
+.single_teste_card .teste_card_header .wrap {
+  display: flex;
+  align-items: center;
+}
+.single_teste_card .teste_card_header .header-body h5 {
+  font-size: 1.1rem;
+}
+.single_teste_card .teste_card_header .header-body p {
+  font-size: 0.9rem;
+}
+.single_teste_card .teste_card_header .stars {
+  margin-top: 15px;
+}
+.single_teste_card .teste_card_header .stars i {
+  color: #ff8a00;
+  font-size: 1.3rem;
+}
+.single_teste_card .test-card-body {
+  padding: 38px 14px 24px 14px;
+}
+.single_teste_card .test-card-body p {
+  font-size: 1rem;
 }
 
 .prod-card {
@@ -1702,6 +1883,10 @@ footer .footer-pay img.comp {
   .get-qaleb .q-img-2 img {
     opacity: 0.4;
   }
+  .our-departments .department-info-card .card-img .show-app a,
+  .our-departments .department-info-card .small-images .card-img .show-app a {
+    padding: 16px 30px;
+  }
 }
 @media (max-width: 991px) {
   .order2-tablet {
@@ -1742,6 +1927,18 @@ footer .footer-pay img.comp {
   .serv-card {
     margin-bottom: 250px;
   }
+  .mobile-section-page .strip-color h5 {
+    font-size: 2.5rem;
+  }
+  .our-departments .nav-wrapper .nav {
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+  .our-departments .nav-wrapper .nav .nav-link {
+    min-width: -moz-max-content;
+    min-width: max-content;
+  }
 }
 @media (max-width: 600px) {
   html {
@@ -1763,10 +1960,27 @@ footer .footer-pay img.comp {
   .web-section-page .about-section .ab-content p {
     margin-top: 20px;
   }
+  .mobile-section-page .strip-color h5 {
+    font-size: 2.3rem;
+  }
+  .features .feature_img {
+    margin-top: -70px;
+    margin-bottom: 50px;
+  }
+  .our-departments .department-header p {
+    font-size: 1.3rem;
+  }
+  .our-departments .department-info-card {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .our-departments .department-info-card .small-images .card-img {
+    margin-top: 25px;
+  }
 }
 /* ================================================================ */
 /* Shared styles  */
-.header, .who-release-wrapper, .work-owner, .why-chhose-us, .faq, .web-section-page .our-services, .web-section-page .latest-projects, .mobile-section-page .features {
+.header, .who-release-wrapper, .work-owner, .why-chhose-us, .faq, .web-section-page .our-services, .web-section-page .latest-projects, .mobile-section-page .features, .testemonial {
   background-position: center;
   background-size: cover;
 }

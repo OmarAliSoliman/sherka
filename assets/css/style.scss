@@ -1958,6 +1958,9 @@ p {
       color: #eef7ff;
     }
   }
+  .mobilefaq {
+    margin-top: 0;
+  }
 }
 
 .feature-card {
@@ -1992,6 +1995,215 @@ p {
     .line {
       right: unset;
       left: 50px;
+    }
+  }
+}
+
+.our-departments {
+  padding: 31px 0 75px 0;
+  background-color: #f1f1f1;
+  .department-header {
+    h5 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-weight: 700;
+      color: #2857ec;
+      font-size: 1.8rem;
+    }
+  }
+  .nav-wrapper {
+    background-color: #fff;
+    padding: 0;
+    padding: 32px 0;
+    border-radius: 13px;
+    padding-left: 22px;
+    .nav {
+      margin-left: 0 !important;
+      .nav-link {
+        border-radius: 0;
+        padding: 9px;
+        padding-right: 32px;
+        text-align: right;
+        font-size: 1.2rem;
+        color: #000;
+        margin-bottom: 22px;
+        img {
+          margin-left: 20px;
+          width: 25px;
+        }
+        &.active {
+          border-radius: 25px 0 0 25px;
+          color: #fff;
+        }
+        &:first-child {
+          img {
+            width: 18px;
+          }
+        }
+        &:nth-last-child(2) {
+          img {
+            width: 18px;
+          }
+        }
+      }
+    }
+  }
+  .department-info-card {
+    background-image: linear-gradient(
+      to right,
+      rgba(#2857ec, 1),
+      rgba(#02284a, 1)
+    );
+    padding: 25px 55px 35px 55px;
+    border-radius: 17px;
+    .head {
+      color: #fff;
+      font-size: 3rem;
+      margin-bottom: 13px;
+    }
+    p {
+      font-size: 1rem;
+      color: #fff;
+    }
+    li {
+      p {
+        font-size: 1.1rem;
+        font-weight: 700;
+        position: relative;
+        padding-right: 20px;
+        &::after {
+          content: "";
+          position: absolute;
+          top: 10px;
+          right: 0;
+          width: 10px;
+          height: 10px;
+          border: 2px solid $mainColor;
+          border-radius: 50%;
+        }
+      }
+    }
+    .card-img {
+      .show-app {
+        a {
+          background-color: $mainColor;
+          color: #fff;
+          border-radius: 9px;
+          position: absolute;
+          bottom: -20px;
+          width: 60%;
+          left: 50%;
+          transform: translate(-50%, 0);
+          margin: auto;
+          padding: 16px 60px;
+          text-align: center;
+          color: #fff;
+          &:hover {
+            background-color: #fff;
+            color: $mainColor;
+          }
+        }
+      }
+    }
+    .big-image {
+      height: 438px;
+      border-radius: 26px;
+      img {
+        border-radius: 26px;
+      }
+    }
+
+    .small-images {
+      .card-img {
+        height: 211px;
+        margin-bottom: 20px;
+        .show-app {
+          a {
+            bottom: -10px;
+            width: 50%;
+            padding: 10px 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.testemonial {
+  padding: 50px 0 65px 0;
+  position: relative;
+  background-image: url("../images/testbg.png");
+  @extend %backgroundImage;
+  .teste_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    // height: 40%;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(#001d7a, 1),
+      rgba(#007ce8, 1)
+    );
+    padding-bottom: 280px;
+  }
+  .head {
+    text-align: center;
+    position: relative;
+    z-index: 4;
+    margin-bottom: 80px;
+    h5 {
+      font-size: 2.5rem;
+      color: #fff;
+    }
+  }
+}
+.teste_cards {
+}
+.single_teste_card {
+  position: relative;
+  z-index: 3;
+  background-color: #ffffff;
+  border-radius: 12px;
+  // direction: rtl;
+  border: 0.5px solid rgba(#707070, 0.57);
+  margin: 0 10px;
+  .card-img {
+    width: 63px;
+    height: 63px;
+    border-radius: 50%;
+    margin-left: 10px;
+  }
+  .teste_card_header {
+    .wrap {
+      display: flex;
+      align-items: center;
+    }
+    background-color: rgba(#2857ec, 0.15);
+    padding: 14px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    .header-body {
+      h5 {
+        font-size: 1.1rem;
+      }
+      p {
+        font-size: 0.9rem;
+      }
+    }
+    .stars {
+      margin-top: 15px;
+      i {
+        color: #ff8a00;
+        font-size: 1.3rem;
+      }
+    }
+  }
+  .test-card-body {
+    padding: 38px 14px 24px 14px;
+    p {
+      font-size: 1rem;
     }
   }
 }
@@ -2150,6 +2362,10 @@ footer {
   .get-qaleb .q-img-2 img {
     opacity: 0.4;
   }
+  .our-departments .department-info-card .card-img .show-app a,
+  .our-departments .department-info-card .small-images .card-img .show-app a {
+    padding: 16px 30px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -2206,6 +2422,18 @@ footer {
   .serv-card {
     margin-bottom: 250px;
   }
+  .mobile-section-page .strip-color h5 {
+    font-size: 2.5rem;
+  }
+
+  .our-departments .nav-wrapper .nav {
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    overflow: auto;
+    .nav-link{
+      min-width: max-content;
+    }
+  }
 }
 
 @media (max-width: 600px) {
@@ -2234,6 +2462,29 @@ footer {
 
   .web-section-page .about-section .ab-content p {
     margin-top: 20px;
+  }
+  .mobile-section-page .strip-color h5{
+    font-size: 2.3rem;
+  }
+  .features{
+    .feature_img{
+      margin-top: -70px;
+      margin-bottom: 50px;
+    }
+  }
+  .feature-card{
+    // margin-top: 100px;
+    // margin-bottom: 0;
+  }
+  .our-departments .department-header p{
+    font-size: 1.3rem;
+  }
+  .our-departments .department-info-card{
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .our-departments .department-info-card .small-images .card-img{
+    margin-top: 25px;
   }
 }
 
