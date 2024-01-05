@@ -1508,7 +1508,7 @@ p {
 .mobile-section-page .features {
   padding-top: 100px;
   padding-bottom: 50px;
-  background-image: url("../images/featuresbg.png");
+  background-image: url("../images/featuresbg.webp");
 }
 .mobile-section-page .features .feature_img img {
   width: 80%;
@@ -1531,7 +1531,7 @@ p {
   font-weight: 700;
 }
 .mobile-section-page .faq {
-  background-image: url("../images/faqinnerbg.png") !important;
+  background-image: url("../images/faqinnerbg.webp") !important;
 }
 .mobile-section-page .faq::after {
   background-image: linear-gradient(to right, rgba(0, 57, 181, 0.97), rgba(2, 40, 74, 0.98));
@@ -1697,7 +1697,7 @@ p {
 .testemonial {
   padding: 50px 0 65px 0;
   position: relative;
-  background-image: url("../images/testbg.png");
+  background-image: url("../images/testbg.webp");
 }
 .testemonial .teste_bg {
   position: absolute;

@@ -1923,7 +1923,7 @@ p {
   .features {
     padding-top: 100px;
     padding-bottom: 50px;
-    background-image: url("../images/featuresbg.png");
+    background-image: url("../images/featuresbg.webp");
     @extend %backgroundImage;
     .feature_img img{
       width: 80%;
@@ -1950,7 +1950,7 @@ p {
     }
   }
   .faq {
-    background-image: url("../images/faqinnerbg.png") !important;
+    background-image: url("../images/faqinnerbg.webp") !important;
     &::after {
       background-image: linear-gradient(
         to right,
@@ -2146,7 +2146,7 @@ p {
 .testemonial {
   padding: 50px 0 65px 0;
   position: relative;
-  background-image: url("../images/testbg.png");
+  background-image: url("../images/testbg.webp");
   @extend %backgroundImage;
   .teste_bg {
     position: absolute;
