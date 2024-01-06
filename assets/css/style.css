@@ -1204,6 +1204,10 @@ p {
   padding: 13px 12px;
   min-width: 200px;
   font-size: 0.9rem;
+  margin-left: auto !important;
+}
+.web-section-page .about-section .ab-img {
+  width: 80%;
 }
 .web-section-page .our-services {
   background-image: url("../images/servicesbg.png");
@@ -1224,6 +1228,102 @@ p {
 }
 .web-section-page .our-services .section-header p {
   font-size: 1.2rem;
+}
+.web-section-page .new-services {
+  background-image: unset;
+  background-color: #f2f2f2;
+  margin-top: 50px;
+}
+.web-section-page .new-services .section-header h5 {
+  color: #2857ec;
+}
+.web-section-page .new-services .section-header p {
+  color: #1f2034;
+}
+.web-section-page .new-service-card {
+  background-color: #ebf0fe;
+  padding: 80px 14px 40px 14px;
+  position: relative;
+  width: 459px;
+  max-width: 100%;
+  margin-bottom: 160px;
+}
+.web-section-page .new-service-card .card-icon {
+  position: absolute;
+  left: 24px;
+  top: -50px;
+}
+.web-section-page .new-service-card .card-title {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.web-section-page .new-service-card .card-text {
+  font-size: 1.1rem;
+  color: #616161;
+}
+.web-section-page .steps-follow {
+  position: relative;
+}
+.web-section-page .steps-follow:after {
+  content: "";
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(234, 234, 234, 0.8));
+}
+.web-section-page .steps-follow .section-header {
+  position: relative;
+  z-index: 3;
+}
+.web-section-page .steps-follow .section-header h5 {
+  color: #2857ec;
+}
+.web-section-page .steps-follow .section-header p {
+  color: #1f2034;
+}
+.web-section-page .new-steps-card {
+  position: relative;
+  z-index: 3;
+  border: 1px solid #000;
+}
+.web-section-page .new-steps-card .ste-img {
+  width: 100%;
+}
+.web-section-page .new-steps-card .ste-img img {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 150px;
+  width: 80%;
+}
+.web-section-page .new-steps-card .first_card {
+  margin-right: auto !important;
+  margin-left: unset !important;
+}
+.web-section-page .new-steps-card .second_card {
+  margin-left: auto !important;
+  margin-right: unset !important;
+}
+.web-section-page .new-step-card {
+  text-align: center;
+  position: relative;
+  margin-bottom: 110px;
+  z-index: 3;
+}
+.web-section-page .new-step-card .card-icon {
+  margin-bottom: 10px;
+}
+.web-section-page .new-step-card .card-title span {
+  margin-left: 10px;
+  color: #ed84b1;
+}
+.web-section-page .new-step-card .card-title h5 {
+  font-size: 1.1rem;
+}
+.web-section-page .new-step-card .card-text {
+  width: 50%;
+  margin: auto;
+}
+.web-section-page .new-step-card .card-text p {
+  font-size: 0.8rem;
 }
 .web-section-page .what-we-offer {
   padding: 54px 0;
@@ -1319,11 +1419,33 @@ p {
   padding: 12px;
   position: relative;
   z-index: 3;
-  margin: auto;
   margin-top: 50px;
   display: block;
   width: -moz-fit-content;
   width: fit-content;
+}
+.web-section-page .new-works .section-header h5,
+.web-section-page .new-works .section-header p {
+  color: #000;
+}
+.web-section-page .new-works .section-header p {
+  width: 50%;
+  margin: auto;
+}
+.web-section-page .new-work-card {
+  height: 467px;
+  margin-bottom: 55px;
+}
+.web-section-page .new-work-card .card-img {
+  height: 100%;
+  border-radius: 25px;
+  border: 2px solid #ff8f00;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.web-section-page .new-work-card .card-img img {
+  border-radius: 25px;
 }
 
 .latest-projects-slider {
@@ -2020,7 +2142,7 @@ footer .footer-pay img.comp {
 }
 /* ================================================================ */
 /* Shared styles  */
-.header, .who-release-wrapper, .work-owner, .why-chhose-us, .faq, .web-section-page .our-services, .web-section-page .latest-projects, .mobile-section-page .features, .testemonial {
+.header, .who-release-wrapper, .work-owner, .why-chhose-us, .faq, .web-section-page .our-services, .web-section-page .steps-follow, .web-section-page .latest-projects, .mobile-section-page .features, .testemonial {
   background-position: center;
   background-size: cover;
 }
@@ -2030,7 +2152,7 @@ footer .footer-pay img.comp {
   font-weight: 900;
 }
 
-.header::after, .who-release-wrapper::after, .work-card .shadow-title, .why-chhose-us:after, .faq::after, .portfolio-card .card-img::after {
+.header::after, .who-release-wrapper::after, .work-card .shadow-title, .why-chhose-us:after, .faq::after, .portfolio-card .card-img::after, .web-section-page .steps-follow:after {
   position: absolute;
   top: 0;
   left: 0;
