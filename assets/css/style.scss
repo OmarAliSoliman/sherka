@@ -437,7 +437,7 @@ p {
     }
   }
 }
-.custom-top-header{
+.custom-top-header {
   display: none;
 }
 
@@ -1618,6 +1618,7 @@ p {
     .section-header {
       position: relative;
       z-index: 3;
+      // margin-bottom: 50px;
       h5 {
         color: #2857ec;
       }
@@ -1625,57 +1626,57 @@ p {
         color: #1f2034;
       }
     }
-  }
-  .new-steps-card {
-    position: relative;
-    z-index: 3;
-    border: 1px solid #000;
-    .ste-img {
-      width: 100%;
-      img {
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, 0);
-        top: 150px;
-        width: 80%;
+    .step_header{
+      margin-bottom: 25px;
+      margin-right: 20px;
+      position: relative;
+      z-index: 4;
+      h5{
+        color: #2757ec;
       }
     }
-    .col-lg-5 {
-      // padding: 0;
-    }
-    .first_card {
-      margin-right: auto !important;
-      margin-left: unset !important;
-    }
-    .second_card {
-      margin-left: auto !important;
-      margin-right: unset !important;
-    }
+  }
+  .new-steps-cards {
+    position: relative;
+    z-index: 3;
+    // border: 1px solid #000;
   }
   .new-step-card {
-    text-align: center;
     position: relative;
-    margin-bottom: 110px;
-    // border: 1px solid #000;
-    z-index: 3;
-    .card-icon {
-      margin-bottom: 10px;
+    padding-right: 40px;
+    // padding-top: 40px;
+    padding-bottom: 50px;
+    .number{
+      position: absolute;
+      right: -25px;
+      top: 13px;
+      color: #2757ec;
+      font-size: 1.1rem;
+      font-weight: bold;
     }
     .card-title {
-      span {
-        margin-left: 10px;
-        color: #ed84b1;
-      }
-      h5 {
-        font-size: 1.1rem;
-      }
+      font-size: 1.2rem;
+      margin: 10px 0;
+      font-weight: bold;
     }
-    .card-text {
-      width: 50%;
-      margin: auto;
-      p {
-        font-size: 0.8rem;
-      }
+    .bullet {
+      position: absolute;
+      top: 12px;
+      right: 0;
+      content: "";
+      width: 25px;
+      height: 25px;
+      background-color: #2757ec;
+      border-radius: 50%;
+    }
+    &::after{
+      content: "";
+      position: absolute;
+      width: 1px;
+      right: 12px;
+      top: -30px;
+      height: 100%;
+      border: 1px dashed #2757ec;
     }
   }
 
@@ -2529,29 +2530,35 @@ footer {
   .blog-card .card-img {
     height: 200px;
   }
-  .mobile-section-header .header-content-img img{
+  .mobile-section-header .header-content-img img {
     width: 50%;
   }
-  .mobile-section-header .header-content{
+  .mobile-section-header .header-content {
     padding-top: 50px;
   }
-  .mobile-section-header .header-content-content h5{
+  .mobile-section-header .header-content-content h5 {
     font-size: 2rem;
   }
-  .mobile-section-header .header-content-content p, .mobile-section-header .header-content-content li p{
-    font-size: .9rem;
+  .mobile-section-header .header-content-content p,
+  .mobile-section-header .header-content-content li p {
+    font-size: 0.9rem;
   }
-  .mobile-section-header .header-content-content a{
+  .mobile-section-header .header-content-content a {
     padding: 15px 60px;
   }
-  .mobile-section-page .strip-color h5{
+  .mobile-section-page .strip-color h5 {
     font-size: 2rem;
   }
-  .feature-card .card-body p{
-    font-size: .8rem;
+  .feature-card .card-body p {
+    font-size: 0.8rem;
   }
-  .mobile-section-page .features .feature_img img{
+  .mobile-section-page .features .feature_img img {
     width: 70%;
+  }
+  .web-section-page .new-step-card .number{
+    right: 4px;
+    z-index: 3;
+    color: #fff;
   }
 }
 
