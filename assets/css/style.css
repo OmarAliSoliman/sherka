@@ -352,6 +352,10 @@ p {
   display: block;
 }
 
+.custom-top-header {
+  display: none;
+}
+
 /* ================================================================ */
 .header {
   min-height: 100vh;
@@ -2023,6 +2027,30 @@ footer .footer-pay img.comp {
   }
   .blog-card .card-img {
     height: 200px;
+  }
+  .mobile-section-header .header-content-img img {
+    width: 50%;
+  }
+  .mobile-section-header .header-content {
+    padding-top: 50px;
+  }
+  .mobile-section-header .header-content-content h5 {
+    font-size: 2rem;
+  }
+  .mobile-section-header .header-content-content p, .mobile-section-header .header-content-content li p {
+    font-size: 0.9rem;
+  }
+  .mobile-section-header .header-content-content a {
+    padding: 15px 60px;
+  }
+  .mobile-section-page .strip-color h5 {
+    font-size: 2rem;
+  }
+  .feature-card .card-body p {
+    font-size: 0.8rem;
+  }
+  .mobile-section-page .features .feature_img img {
+    width: 70%;
   }
 }
 @media (max-width: 1300px) {
