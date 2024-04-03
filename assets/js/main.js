@@ -185,6 +185,11 @@ $(document).ready(function () {
 
   AOS.init();
 
+
+  if($(".web-section-slider").length){
+    $(".web-section-slider").slick();
+  }
+
 });
 
 
