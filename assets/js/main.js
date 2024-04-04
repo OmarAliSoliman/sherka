@@ -187,7 +187,10 @@ $(document).ready(function () {
 
 
   if($(".web-section-slider").length){
-    $(".web-section-slider").slick();
+    $(".web-section-slider").slick({
+      arrows: false,
+      dots: false,
+    });
   }
 
 });
