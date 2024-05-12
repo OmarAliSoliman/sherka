@@ -1893,6 +1893,19 @@ p {
 }
 .single_teste_card .test-card-body p {
   font-size: 1rem;
+  -webkit-line-clamp: 4 !important;
+  margin-bottom: 0;
+}
+.single_teste_card .test-card-body p a {
+  color: #007ce8;
+  margin-top: 10px;
+  display: block;
+}
+
+.active_test-card-body p {
+  font-size: 1rem;
+  -webkit-line-clamp: unset !important;
+  display: block !important;
 }
 
 .prod-card {
@@ -2206,7 +2219,7 @@ footer .footer-pay img.comp {
   height: 100%;
 }
 
-.feature-card .card-body p {
+.feature-card .card-body p, .single_teste_card .test-card-body p, .active_test-card-body p {
   overflow: hidden;
   display: -webkit-box;
   text-overflow: ellipsis;

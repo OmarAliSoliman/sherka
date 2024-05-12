@@ -192,6 +192,23 @@ $(document).ready(function () {
       dots: false,
     });
   }
+  
+  if($(".testemonial").length){
+    var open = false;
+    $(".testemonial .test-card-body a").on("click", function(e){
+      e.preventDefault();
+      if(!open){
+        $(this).parent().addClass("active_test-card-body");
+        $(this).text("قراءه اقل");
+        open = true;
+      }else{
+        $(this).parent().removeClass("active_test-card-body");
+        $(this).text("قراءه المزيد");
+        open=false;
+      }
+
+    })
+  }
 
 });
 

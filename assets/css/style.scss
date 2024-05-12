@@ -2374,7 +2374,24 @@ p {
     padding: 38px 14px 24px 14px;
     p {
       font-size: 1rem;
+      @extend %spcfies-number-of-line;
+      -webkit-line-clamp: 4 !important;
+      margin-bottom: 0;
+      a{
+        color: #007ce8;
+        margin-top: 10px;
+        display: block;
+      }
     }
+  }
+}
+
+.active_test-card-body{
+  p {
+    font-size: 1rem;
+    @extend %spcfies-number-of-line;
+    -webkit-line-clamp: unset !important;
+    display: block !important;
   }
 }
 
