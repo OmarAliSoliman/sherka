@@ -189,7 +189,9 @@ $(document).ready(function () {
   if($(".web-section-slider").length){
     $(".web-section-slider").slick({
       arrows: false,
-      dots: false,
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 3000,
     });
   }
   
