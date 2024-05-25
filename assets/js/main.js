@@ -212,6 +212,16 @@ $(document).ready(function () {
     })
   }
 
+  if($(".custom-navbar").length){
+    $(window).on('scroll', function(){
+      if($(this).scrollTop() > 20){
+        $(".custom-navbar").addClass("fixed_custom-navbar")
+      }else{
+        $(".custom-navbar").removeClass("fixed_custom-navbar")
+      }
+    })
+  }
+
 });
 
 

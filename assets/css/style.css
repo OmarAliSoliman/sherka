@@ -340,10 +340,13 @@ p {
 /* ================================================================ */
 .top-header {
   background-color: #ff8f00;
-  padding: 16px 0;
+  padding: 10px 0;
   text-align: left;
   position: relative;
   z-index: 3;
+}
+.top-header .social {
+  display: none;
 }
 .top-header li {
   margin-right: 15px;
@@ -465,11 +468,16 @@ p {
   position: relative;
   z-index: 3;
 }
+.custom-navbar .logo img {
+  display: inline-block;
+  transition: all 0.5s ease-in-out;
+}
 .custom-navbar nav {
   padding: 25px 0;
   padding-right: 60px;
   background-color: rgba(255, 255, 255, 0.9);
   border-bottom-right-radius: 50px;
+  transition: all 0.5s ease-in-out;
 }
 .custom-navbar nav li.nav-item {
   margin-right: 35px;
@@ -544,6 +552,19 @@ p {
   opacity: 1;
   visibility: visible;
   z-index: 4;
+}
+
+.fixed_custom-navbar {
+  z-index: 999;
+}
+.fixed_custom-navbar nav {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
+  z-index: 999;
+  padding: 16px 0 !important;
+  padding-right: 60px !important;
+  background-color: rgb(255, 255, 255) !important;
 }
 
 .top-submenu {
@@ -1732,7 +1753,8 @@ p {
   z-index: 11;
 }
 
-.container-wa .floating-button:before, .container-wa .floating-button:after {
+.container-wa .floating-button:before,
+.container-wa .floating-button:after {
   content: "";
   display: block;
   position: absolute;
@@ -1765,7 +1787,8 @@ p {
   color: #fff;
 }
 
-.container-wa .floating-button:before, .container-wa .floating-button:after {
+.container-wa .floating-button:before,
+.container-wa .floating-button:after {
   content: "";
   display: block;
   position: absolute;
