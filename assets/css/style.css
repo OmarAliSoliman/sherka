@@ -539,7 +539,7 @@ p {
   width: 100%;
 }
 .custom-navbar .submenuparent .submenu li a:hover {
-  background-color: #0039b5;
+  background-color: #2857EC;
   color: #fff;
   border-radius: 5px;
   padding: 5px;
@@ -649,7 +649,7 @@ p {
   color: #ff8f00;
   font-weight: 800;
   font-size: 1.5rem;
-  color: #0039b5;
+  color: #2857EC;
 }
 .who-us .wh-content p {
   font-size: 1.1rem;
@@ -678,7 +678,7 @@ p {
   color: #ff8f00;
   font-weight: 800;
   font-size: 1.5rem;
-  color: #0039b5;
+  color: #2857EC;
   position: relative;
   width: -moz-fit-content;
   width: fit-content;
@@ -1131,6 +1131,7 @@ p {
   color: #000;
   margin-bottom: 20px;
   font-size: 1rem;
+  font-weight: bold;
 }
 .blog-card .card-body p {
   font-size: 0.9rem;
@@ -1188,7 +1189,7 @@ p {
   background-color: #ff8f00;
 }
 .portfolio-card:hover .card-title h5 {
-  color: #0039b5;
+  color: #2857EC;
 }
 .portfolio-card:hover .options {
   transform: translate(0);
@@ -1216,7 +1217,7 @@ p {
 .web-section-page .about-section .ab-content li::after {
   position: absolute;
   content: "";
-  border: 2px solid #0039b5;
+  border: 2px solid #2857EC;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -1620,7 +1621,7 @@ p {
 }
 .why-mobile-section .section-header h5 {
   font-size: 2.4rem;
-  color: #0039b5;
+  color: #2857EC;
   font-weight: 700;
   margin-bottom: 24px;
 }
@@ -1638,7 +1639,7 @@ p {
   color: #2857ec;
 }
 .mobile-section-page .about-section .ab-content h5 span {
-  color: #0039b5;
+  color: #2857EC;
   font-weight: 700;
   font-size: 1.7rem;
   margin-right: 8px;
@@ -1968,6 +1969,9 @@ p {
 .our-departments .department-info-card .small-images .card-img {
   height: 211px;
   margin-bottom: 20px;
+}
+.our-departments .department-info-card .small-images .card-img img {
+  border-radius: 10px;
 }
 .our-departments .department-info-card .small-images .card-img .show-app a {
   bottom: -10px;
@@ -2367,7 +2371,7 @@ footer .footer-pay img.comp {
   height: 100%;
 }
 
-.feature-card .card-body p, .single_teste_card .test-card-body p, .active_test-card-body p {
+.single_teste_card .test-card-body p, .active_test-card-body p {
   overflow: hidden;
   display: -webkit-box;
   text-overflow: ellipsis;

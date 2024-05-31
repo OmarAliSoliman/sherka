@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&display=swap");
 /* Constant styles  */
 $mainColor: #ff8f00;
-$secondColor: #0039b5;
+$secondColor: #2857EC;
 // $thirdColor: #252C30;
 
 html {
@@ -1435,6 +1435,7 @@ p {
       color: #000;
       margin-bottom: 20px;
       font-size: 1rem;
+      font-weight: bold;
     }
 
     p {
@@ -2162,7 +2163,7 @@ p {
     }
     p {
       font-size: 0.9rem;
-      @extend %spcfies-number-of-line;
+      // @extend %spcfies-number-of-line;
     }
   }
   .line {
@@ -2447,6 +2448,9 @@ p {
       .card-img {
         height: 211px;
         margin-bottom: 20px;
+        img{
+          border-radius: 10px;
+        }
         .show-app {
           a {
             bottom: -10px;
