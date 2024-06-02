@@ -1990,6 +1990,7 @@ p {
 }
 
 .mobile-section-header {
+  min-height: calc(100vh - 300px) !important;
   .header-content {
     display: block;
     padding-top: 90px;
@@ -2040,7 +2041,7 @@ p {
   .header-content-img {
     text-align: center;
     img {
-      width: 70%;
+      width: 95%;
     }
   }
 }
@@ -2686,7 +2687,7 @@ footer {
 
 @media (max-width: 1600px) {
   .mobile-section-header .header-content-img img {
-    width: 60%;
+    // width: 60%;
   }
   .mobile-section-header .header-content-content h5 {
     font-size: 2.2rem;
@@ -2721,7 +2722,7 @@ footer {
     height: 200px;
   }
   .mobile-section-header .header-content-img img {
-    width: 50%;
+    // width: 50%;
   }
   .mobile-section-header .header-content {
     padding-top: 50px;

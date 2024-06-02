@@ -1560,6 +1560,9 @@ p {
   font-size: 1rem;
 }
 
+.mobile-section-header {
+  min-height: calc(100vh - 300px) !important;
+}
 .mobile-section-header .header-content {
   display: block;
   padding-top: 90px;
@@ -1612,7 +1615,7 @@ p {
   text-align: center;
 }
 .mobile-section-header .header-content-img img {
-  width: 70%;
+  width: 95%;
 }
 
 .why-mobile-section {
@@ -2171,9 +2174,6 @@ footer .footer-pay img.comp {
 
 /* ================================================================ */
 @media (max-width: 1600px) {
-  .mobile-section-header .header-content-img img {
-    width: 60%;
-  }
   .mobile-section-header .header-content-content h5 {
     font-size: 2.2rem;
   }
@@ -2199,9 +2199,6 @@ footer .footer-pay img.comp {
   }
   .blog-card .card-img {
     height: 200px;
-  }
-  .mobile-section-header .header-content-img img {
-    width: 50%;
   }
   .mobile-section-header .header-content {
     padding-top: 50px;
