@@ -42,7 +42,7 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -116,7 +116,7 @@ p {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 .no-margin {
@@ -379,7 +379,11 @@ p {
 }
 .header::after {
   content: "";
-  background-image: linear-gradient(to right, rgba(0, 57, 181, 0.35), rgba(0, 29, 91, 0.5));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 57, 181, 0.35),
+    rgba(0, 29, 91, 0.5)
+  );
 }
 .header .header-content {
   height: 100%;
@@ -763,7 +767,14 @@ p {
   border-bottom-right-radius: 200px;
   padding-bottom: 120px;
   min-height: 400px;
-  background-image: linear-gradient(to right, white, #fdfdfd, #f6f6f6, #eaeaea, #d9d9d9);
+  background-image: linear-gradient(
+    to right,
+    white,
+    #fdfdfd,
+    #f6f6f6,
+    #eaeaea,
+    #d9d9d9
+  );
 }
 .release-card .card-body .card-title {
   font-size: 1rem;
@@ -1021,7 +1032,11 @@ p {
   top: 0;
   width: 100%;
   height: 100%;
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.5), #ff8f00);
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.5),
+    #ff8f00
+  );
 }
 .faq .section-header {
   text-align: center;
@@ -1293,7 +1308,11 @@ p {
 }
 .web-section-page .steps-follow:after {
   content: "";
-  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(234, 234, 234, 0.8));
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0.8),
+    rgba(234, 234, 234, 0.8)
+  );
 }
 .web-section-page .steps-follow .section-header {
   position: relative;
@@ -1689,13 +1708,22 @@ p {
   background-image: url("../images/faqinnerbg.webp") !important;
 }
 .mobile-section-page .faq::after {
-  background-image: linear-gradient(to right, rgba(0, 57, 181, 0.97), rgba(2, 40, 74, 0.98));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 57, 181, 0.97),
+    rgba(2, 40, 74, 0.98)
+  );
 }
 .mobile-section-page .faq .section-header h5,
 .mobile-section-page .faq .section-header p {
   color: #fff;
 }
-.mobile-section-page .faq .accordion .accordion-item .accordion-header .accordion-button {
+.mobile-section-page
+  .faq
+  .accordion
+  .accordion-item
+  .accordion-header
+  .accordion-button {
   color: #fff;
 }
 .mobile-section-page .faq .accordion .accordion-item .accordion-body p {
@@ -2306,7 +2334,7 @@ p {
   }
 }
 .new_why_choose_funun {
-  background-color: #F0F4FF;
+  background-color: #f0f4ff;
   padding: 45px 0;
 }
 .new_why_choose_funun .section-header {
@@ -2319,7 +2347,7 @@ p {
   color: #000000;
 }
 .new_why_choose_funun .section-header h5 span {
-  color: #FF0202;
+  color: #ff0202;
 }
 
 .new_why_choose_funun_card {
@@ -2335,8 +2363,104 @@ p {
 }
 .new_why_choose_funun_card .card_body p {
   font-size: 1rem;
-  color: #2D2D2D;
+  color: #2d2d2d;
   width: 90%;
+}
+
+.special_mobile_app {
+  background-color: #0039b5;
+  padding: 10px;
+}
+.special_mobile_app .section_header {
+  margin: 0;
+  margin-bottom: 35px;
+}
+.special_mobile_app .wrapper {
+  border: 1px solid #fff;
+  padding: 45px 0;
+}
+.special_mobile_app .section_header h5,
+.special_mobile_app .section_header p {
+  margin: 0;
+  color: #fff;
+}
+
+.special_mobile_app .section_header h5 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.special_mobile_app .section_header p {
+  font-size: 1.4rem;
+}
+
+.special_mobile_app .special_navs {
+  background-color: #eff3fa;
+  padding: 0 30px;
+}
+
+.special_mobile_app .special_navs .nav {
+  padding: 45px 0;
+}
+
+.special_mobile_app .special_navs .nav .nav-link {
+  text-align: right;
+}
+
+.special_mobile_app .special_navs .nav {
+  border-left: 1px solid #2d2d2d5d;
+}
+
+.special_mobile_app .special_navs .nav .nav-link span {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+.special_mobile_app .special_navs .nav .nav-link {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 0.5px solid #2d2d2d5d;
+  border-radius: 0;
+  padding-left: 30px;
+}
+
+.special_mobile_app .special_navs .nav {
+  flex: none;
+}
+
+.special_mobile_app .special_navs .tab-content {
+  padding: 70px 24px;
+}
+
+.special_mobile_app .special_navs .tab-content h5 {
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+}
+
+.special_mobile_app .special_navs .tab-content p {
+  font-size: 1.1rem;
+  line-height: 35px;
+}
+
+.special_mobile_app .special_navs .nav .nav-link:last-child {
+  border-bottom: 0;
+}
+
+.special_mobile_app .special_navs .nav .nav-link img {
+  width: 23px;
+  height: 23px;
+  margin-left: 16px;
+  filter: grayscale(1);
+}
+.special_mobile_app .special_navs .nav .nav-link.active {
+  background-color: transparent;
+}
+.special_mobile_app .special_navs .nav .nav-link.active span {
+  color: #007cbe;
+}
+.special_mobile_app .special_navs .nav .nav-link.active img {
+  filter: grayscale(0);
 }
 
 footer {
@@ -2518,6 +2642,35 @@ footer .footer-pay img.comp {
     min-width: -moz-max-content;
     min-width: max-content;
   }
+  .special_mobile_app .special_navs .special_navs_wrapper {
+    flex-direction: column !important;
+  }
+
+  .special_mobile_app .special_navs .special_navs_wrapper .nav {
+    width: 100%;
+  }
+  .special_mobile_app .special_navs .tab-content,
+  .special_mobile_app .special_navs .nav {
+    padding: 30px 10px;
+  }
+  .special_mobile_app .special_navs .nav .nav-link:last-child {
+    border-bottom: 0.5px solid #2d2d2d5d;
+  }
+  .special_mobile_app .special_navs {
+    background-color: #eff3fa;
+    padding: 0 10px;
+  }
+  .special_mobile_app .special_navs .special_navs_wrapper .nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    border: 0;
+  }
+  .special_mobile_app .special_navs .special_navs_wrapper .nav button{
+    min-width: max-content;
+  }
 }
 @media (max-width: 600px) {
   html {
@@ -2562,17 +2715,34 @@ footer .footer-pay img.comp {
 }
 /* ================================================================ */
 /* Shared styles  */
-.header, .who-release-wrapper, .work-owner, .why-chhose-us, .faq, .web-section-page .our-services, .web-section-page .steps-follow, .web-section-page .latest-projects, .mobile-section-page .features, .testemonial {
+.header,
+.who-release-wrapper,
+.work-owner,
+.why-chhose-us,
+.faq,
+.web-section-page .our-services,
+.web-section-page .steps-follow,
+.web-section-page .latest-projects,
+.mobile-section-page .features,
+.testemonial {
   background-position: center;
   background-size: cover;
 }
 
-.faq .accordion .accordion-item .accordion-button::after, .latest-projects-slider .slick-prev::before, .latest-projects-slider .slick-next::before {
+.faq .accordion .accordion-item .accordion-button::after,
+.latest-projects-slider .slick-prev::before,
+.latest-projects-slider .slick-next::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
 }
 
-.header::after, .who-release-wrapper::after, .work-card .shadow-title, .why-chhose-us:after, .faq::after, .portfolio-card .card-img::after, .web-section-page .steps-follow:after {
+.header::after,
+.who-release-wrapper::after,
+.work-card .shadow-title,
+.why-chhose-us:after,
+.faq::after,
+.portfolio-card .card-img::after,
+.web-section-page .steps-follow:after {
   position: absolute;
   top: 0;
   left: 0;
@@ -2582,10 +2752,11 @@ footer .footer-pay img.comp {
   height: 100%;
 }
 
-.single_teste_card .test-card-body p, .active_test-card-body p {
+.single_teste_card .test-card-body p,
+.active_test-card-body p {
   overflow: hidden;
   display: -webkit-box;
   text-overflow: ellipsis;
   -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
-}/*# sourceMappingURL=style.css.map */
+} /*# sourceMappingURL=style.css.map */

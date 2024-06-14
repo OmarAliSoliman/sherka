@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47.213" height="58.559" viewBox="0 0 47.213 58.559">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.04" y1="0.27" x2="0.759" y2="0.529" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-opacity="0.8"/>
+      <stop offset="1" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="flutter-svgrepo-com" transform="translate(-0.001 0)">
+    <path id="Path_51838" data-name="Path 51838" d="M29.161,0,0,29.161l9.026,9.026L47.213,0Z" fill="#47c5fb"/>
+    <path id="Path_51839" data-name="Path 51839" d="M87.762,145.4,72.149,161.01l9.06,9.2,9.009-9.009,15.8-15.8Z" transform="translate(-58.804 -118.505)" fill="#47c5fb"/>
+    <path id="Path_51840" data-name="Path 51840" d="M121.133,239.83l6.858,6.858h17.95l-15.8-15.868Z" transform="translate(-98.729 -188.129)" fill="#00569e"/>
+    <path id="Path_51841" data-name="Path 51841" d="M71.6,190.589l9.026-9.026,9.144,9.111-9.009,9.009Z" transform="translate(-58.356 -147.981)" fill="#00b5f8"/>
+    <path id="Path_51842" data-name="Path 51842" d="M121.133,243.188l7.5-2.489.745-5.758Z" transform="translate(-98.728 -191.488)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
